@@ -16,5 +16,9 @@ class Home extends Controller
         $this->view('home/index', ['name' => $user->name]);
     }
 
+    public function gallery(){
+        $this->view('home/gallery');
+    }
+
 
 }
