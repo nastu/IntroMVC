@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Creative Company</title>
+    <title>Intro Joanna Grzędowski</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 
 
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css"/>
 </head>
 
 <body>
@@ -53,93 +53,23 @@
 
     <div class="container text-center">
 
-        <h1>Słowem o nas</h1>
+        <h1>O firmie</h1>
 
         <p class="textStyle">
-            Hey there! This is a <a href="http://tutorialzine.com/2014/04/creative-company-bootstrap-template/">responsive
-                template made by Tutorialzine</a>. It uses the bootstrap framework from twitter. Try resizing your
-            browser window, or open the page on your smartphone. We hope you find our little template useful! <br><br>Feel
-            free to share it with your friends, or, if possible, include a back link to our site if you use it. Thanks!
+            Intro Joanna Grzedowska zakład oferujący usługi z zakresu poligrafii i introligatorstwa
         </p>
 
         <h1 id="gallery">Galeria</h1>
 
     </div>
-    <div class="container">
-        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#galleryCarousel" data-slide-to="1"></li>
-                <li data-target="#galleryCarousel" data-slide-to="2"></li>
-            </ol>
-            <?php
-            $files = glob('pictures/*.{jpg,png,gif}', GLOB_BRACE); ?>
 
-            <!--        Wrapper for slides -->
-            <div class="carousel-inner gallery main-gallery" role="listbox">
-                <div class="item active">
-                    <img src="<?php $files[0];?>" alt="Chania">
-                </div>
+    <!--Carouzel gallery-->
 
-                <?php
+    <?php include_once 'gallery.php' ?>
 
-                foreach ($files as $file) {
-                    $src = '';
-                    echo $file . ' ';
-                    echo '<img style="max-width: 150px; max-height: 100px;" src="../' . $file . '"></br>';
-                }
-                ?>
-                <!---->
-                <!--                <div class="item">-->
-                <!--                    <img src="image/img2.jpg" alt="Chania">-->
-                <!--                </div>-->
-                <!---->
-                <!--                <div class="item">-->
-                <!--                    <img src="image/img3.jpg" alt="Chania">-->
-                <!--                </div>-->
-            </div>
+    <!--    Contact-->
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="container textstyle">
-        <div class="row text-center latestProjects">
-
-            <div class="col-md-4 col-sm-6">
-                <a href="http://dribbble.com/shots/1210363-Weather-App-Washing-Machine-iOS7">
-                    <img class="imgsize" src="image/1.jpg" alt="weather app">
-                </a>
-                <p>Weather app design <a href="http://dribbble.com/shots/1210363-Weather-App-Washing-Machine-iOS7">learn
-                        more →</a></p>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                <a href="http://dribbble.com/shots/202313-British-Tea-Cup">
-                    <img class="imgsize" src="image/2.jpg" alt="british tea cup">
-                </a>
-                <p>3D modeling and rendering <a href="http://dribbble.com/shots/202313-British-Tea-Cup">learn more →</a>
-                </p>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-                <a href="http://dribbble.com/shots/606745-In-app-Visual-Data">
-                    <img class="imgsize" src="image/3.jpg" alt="app visualization data">
-                </a>
-                <p>Mobile web application <a href="http://dribbble.com/shots/606745-In-app-Visual-Data">learn more →</a>
-                </p>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
